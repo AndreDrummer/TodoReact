@@ -5,9 +5,9 @@ module.exports = {
     mode: 'development', // Modo de execução da aplicação
     entry: './src/index.jsx', // Arquivo de entrada do webpack
     output: {
-        publicPath: '',
+        filename: 'bundle.js', // nome do arquivo
         path: path.resolve(__dirname + 'dist'), // caminho da pasta de saida dos arquivos gerados pelo webpack durante o build
-        filename: 'bundle.js' // nome do arquivo
+        publicPath: '',
     },
     devtool: 'inline-source-map',
     devServer: {
