@@ -10,6 +10,7 @@ module.exports = {
     },
     devtool: 'inline-source-map',
     devServer: {
+        historyApiFallback: true,
         port: 8080, // Porta do servidor de desenvolvimento
         contentBase: './public', // nome da pasta de onde ler os arquivos para servir
     },
